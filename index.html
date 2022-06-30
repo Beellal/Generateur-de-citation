@@ -1,82 +1,69 @@
 <!DOCTYPE html>
-<!-- Coding By CodingNepal - youtube.com/codingnepal -->
-<html lang="en" dir="ltr">
+<html>
   <head>
-      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-166000335-1"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'UA-166000335-1');
-    </script>
-    <meta charset="utf-8">  
-    <title>Random Quote Generator | CodingNepal</title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"/>
-    <style>
-    .download-btn-cn{
-      position: fixed;
-      bottom: 40px;
-      left: 40px;
-      z-index: 99999;
-    }
-    .download-btn-cn a{
-      background: none;
-      padding: 13px 22px;
-      font-size: 16px;
-      color: #fff;
-      text-decoration: none;
-      border-radius: 6px;
-      border: 2px solid #fff;
-      font-family: 'Poppins', sans-serif;
-      transition: all 0.3s ease;
-    }
-    .download-btn-cn a:hover{
-        color: #5372F0;
-        background: #fff;
-    }
-    @media screen and (max-width: 600px){
-        .download-btn-cn{
-            left: 20px;
-        }
-        .download-btn-cn a{
-            font-size: 13px;
-            padding: 9px 15px;
-        }
-    }
-  </style>
+    <!-- Loading The Bootstrap Library -->
+    <link rel="stylesheet" 
+          href=
+"https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" 
+          integrity=
+"sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" 
+          crossorigin="anonymous"/>
+  
+    <!-- Loading Icons From Font Awesome -->
+    <link rel="stylesheet" 
+          href=
+"https://use.fontawesome.com/releases/v5.8.1/css/all.css" 
+          integrity=
+"sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" 
+          crossorigin="anonymous">
+  
+    <!-- Linking Your CSS File -->
+    <link rel="stylesheet" href="style.css"/>
+  
+    <!-- Loading Roboto Font from Google Fonts -->
+    <link href=
+"https://fonts.googleapis.com/css2?family=Roboto&display=swap" 
+          rel="stylesheet">
+  
+    <!-- Loading Open Sans Font from Google Fonts -->
+    <link href=
+"https://fonts.googleapis.com/css2?family=Open+Sans+Condensed:wght@300&display=swap" 
+          rel="stylesheet">
+    
   </head>
-  <body>
-   
-    <div class="wrapper">
-      <header>Quote of the Day</header>
-      <div class="content">
-        <div class="quote-area">
-          <i class="fas fa-quote-left"></i>
-          <p class="quote">Never give up because you never know if the next try is going to be the one that works.</p>
-          <i class="fas fa-quote-right"></i>
-        </div>
-        <div class="author">
-          <span>__</span>
-          <span class="name">Mary Kay Ash</span>
-        </div>
+  
+  <body id="body">
+  
+    <!-- Quote Box -->
+    <div class="block text-center">
+  
+      <!-- Front part of the Quote Box -->
+    <div  class = "quote-box block__main block__front">
+  
+      <!-- Quote to be Displayed Here -->
+      <span id="cit" class = "quote">
+          
+        <!-- Hyphen is Displayed  -->
+        <i class="fas fa-2x fa-quote-left"></i>
+  
+        <!-- Quote Text -->
+        <span class = "text">
+          
+        </span>
+  
+      </span>
+        
+      <!-- Author to be Displayed Here -->
+      <div class = "author">
+        
       </div>
-      <div class="buttons">
-        <div class="features">
-          <ul>
-            <li class="speech"><i class="fas fa-volume-up"></i></li>
-            <li class="copy"><i class="fas fa-copy"></i></li>
-            <li class="twitter"><i class="fab fa-twitter"></i></li>
-          </ul>
-          <button>New Quote</button>
-        </div>
-      </div>
+      <a  onclick="randomQuote()" class = "new-quote btn btn-default" >New Quote</a>
     </div>
-    
-
-    <script src="index.js"></script>
-    
+  
+   
+    </div>
+  <!-- Linking Your JavaScript File -->
+  <script src="index.js"></script>
   </body>
+    
 </html>
